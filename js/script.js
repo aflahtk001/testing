@@ -20,6 +20,7 @@ let events = JSON.parse(localStorage.getItem('events')) || []; // Load from loca
             updateEventDropdowns();
             clearForm('event-form');
             saveEventsToLocalStorage();  
+                alert('Event created successfully!');
         }
 
         function updateEventDropdowns() {
@@ -71,6 +72,7 @@ let events = JSON.parse(localStorage.getItem('events')) || []; // Load from loca
             clearForm('attendance-form');
             document.getElementById('attendanceList').innerHTML = "";
             saveEventsToLocalStorage();  
+                alert('Attendance marked successfully!'); 
         }
 
         function displayAttendanceDashboard() {
